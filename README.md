@@ -108,6 +108,8 @@ streamlit run app.py
       * On the sidebar, click **"Process URLs & Build Index""** from existing data.
       * Ask a question based on the content, such as:
         > *What are the main features of punch iCNG?*
+        
+        > *what is the price of Tiago iCNG?*
 
     ### Option 2: Analyze Custom URLs
 
