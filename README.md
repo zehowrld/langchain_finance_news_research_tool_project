@@ -96,11 +96,28 @@ GEMINI_API_KEY="ENTER_YOUR_GEMINI_API_KEY_HERE"
 
 ### 5\. Run the Application
 
-Execute the Streamlit script to launch the web application:
+1. Execute the Streamlit script to launch the web application:
 
 ```bash
 streamlit run app.py
 ```
+2.  Interact with the Web App:   
+
+    ### Option 1: Use Pre-Built URLs (Demo)
+
+      * On the sidebar, click **"Process URLs & Build Index""** from existing data.
+      * Ask a question based on the content, such as:
+        > *What are the main features of punch iCNG?*
+
+    ### Option 2: Analyze Custom URLs
+
+      *  **Input URLs:** Enter one or more new URLs directly in the sidebar input field.
+      *  **Process Data:** Click **"Process URLs & Build Index"** to initiate the data loading and processing.
+      *  **Indexing Process:**
+          * The system performs text splitting, generates embedding vectors, and indexes them efficiently using **FAISS**.
+          * The FAISS index will be saved in a local file path in pickle format for future use.
+      *  **Ask Questions:**
+          * You can now ask a question and get the answer based on the articles you just processed.
 
 ## 📂 Project Structure
 
