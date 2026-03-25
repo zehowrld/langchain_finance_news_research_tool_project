@@ -84,7 +84,7 @@ pip install -r requirements.txt
 
 ### 4\. API Key Configuration
 
-For local development convenience, the application will load your key from a local `.env` file.
+For local development convenience, the application will load your key from a local `.env` file, please rename .env.example to .env file.
 
   * Add your Gemini API Key (https://aistudio.google.com/app/api-keys) in the following format:
 
