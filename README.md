@@ -31,7 +31,7 @@ The system is engineered as a robust, decoupled pipeline ensuring efficient data
 
 2. **Text Processing:** Content is segmented into optimal chunks using `RecursiveCharacterTextSplitter` to maintain contextual relevance within each chunk for better retrieval.
 
-3. **Vectorization:** Text chunks are transformed into dense, high-dimensional vector embeddings using **Google's `text-embedding-004` model**, ensuring high semantic fidelity and distinction.
+3. **Vectorization:** Text chunks are transformed into dense, high-dimensional vector embeddings using **Google's `gemini-embedding-001` model**, ensuring high semantic fidelity and distinction.
 
 4. **Vector Indexing:** Embeddings are indexed using **FAISS (Facebook AI Similarity Search)**. This library's optimization for L2 distance provides near-instantaneous similarity search performance. The index is persisted locally (in `faiss_index_gemini`) for quick re-use across sessions.
 
@@ -43,7 +43,7 @@ The system is engineered as a robust, decoupled pipeline ensuring efficient data
 
 | **Category** | **Technology/Component** | **Focus Area** |
 | :--- | :--- | :--- |
-| **Generative AI** | Gemini 2.5-Flash, `text-embedding-004` | High-performance inference and state-of-the-art embedding generation. |
+| **Generative AI** | Gemini 2.5-Flash, `gemini-embedding-001` | High-performance inference and state-of-the-art embedding generation. |
 | **ML Engineering** | LangChain (`RetrievalQAWithSourcesChain`) | Orchestrating complex data flow, chaining LLM, and retriever components. |
 | **Vector Storage** | FAISS, Vector Index Management | Expertise in high-speed, scalable similarity search algorithms. |
 | **Deployment/MLOps** | Streamlit | Building and deploying interactive, user-friendly data science applications. |
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 
 For local development convenience, the application will load your key from a local `.env` file.
 
-  * Add your Gemini API Key in the following format:
+  * Add your Gemini API Key (https://aistudio.google.com/app/api-keys) in the following format:
 
 <!-- end list -->
 
